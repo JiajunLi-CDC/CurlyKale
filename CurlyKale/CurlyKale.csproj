@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BC2232C-0A5E-496E-8ED0-A2324526149E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CurlyKale</RootNamespace>
+    <AssemblyName>CurlyKale</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="alglibnet2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\MSI\AppData\Roaming\Grasshopper\Libraries\CurlyKale\alglibnet2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Plankton">
+      <HintPath>C:\Users\MSI\AppData\Roaming\Grasshopper\Libraries\plankton\Plankton.dll</HintPath>
+    </Reference>
+    <Reference Include="PlanktonGh">
+      <HintPath>C:\Users\MSI\AppData\Roaming\Grasshopper\Libraries\plankton\PlanktonGh.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="RhinoCommon">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Rhino 6\System\rhinocommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Rhino 6\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GH_IO">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Rhino 6\Plug-ins\Grasshopper\GH_IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01 Laplacian Growth\01 GhcDifferentialCurve.cs" />
+    <Compile Include="01 Laplacian Growth\01 GhcDifferentialLineImage.cs" />
+    <Compile Include="01 Laplacian Growth\01 GhcDifferentialLineWithBoundary.cs" />
+    <Compile Include="01 Laplacian Growth\DifferentialGrowthSystem.cs" />
+    <Compile Include="02 Reaction Diffusion\02 GhcReactionDiffusionWithGrid.cs" />
+    <Compile Include="02 Reaction Diffusion\02 GhcReactionDiffusionOnTriMesh.cs" />
+    <Compile Include="02 Reaction Diffusion\02 GhcReactionDiffusionOnTriMeshWithDirection.cs" />
+    <Compile Include="02 Reaction Diffusion\Particle.cs" />
+    <Compile Include="04 Diffusion Limited Aggregation\GhcDiffusionLimitedAggregation.cs" />
+    <Compile Include="04 Diffusion Limited Aggregation\walker.cs" />
+    <Compile Include="05 Self-Locking\GhcGetEdgeTreeData.cs" />
+    <Compile Include="05 Self-Locking\GhcGetPointOnCurve.cs" />
+    <Compile Include="07 MeshTools\GhcAdaptiveSubDivision.cs" />
+    <Compile Include="07 MeshTools\GhcMeshVerticesTangentsFromCurves.cs" />
+    <Compile Include="07 MeshTools\GhcReplaceListByValues.cs" />
+    <Compile Include="07 MeshTools\GhcAdaptiveDivideCurveByLength.cs" />
+    <Compile Include="07 MeshTools\GhcAddBoundaryCurvesToTree.cs" />
+    <Compile Include="07 MeshTools\GhcReplaceCurveTreeAfterDeleteDuplicateCurves.cs" />
+    <Compile Include="CurlyKaleInfo.cs" />
+    <Compile Include="01 Laplacian Growth\01 DifferntialOnMeshAttract.cs" />
+    <Compile Include="GhcAverage.cs" />
+    <Compile Include="01 Laplacian Growth\01 GhcDifferentialLineAttract.cs" />
+    <Compile Include="01 Laplacian Growth\01 GhcDifferentialOnMesh.cs" />
+    <Compile Include="07 MeshTools\GhcInsertPointWithData.cs" />
+    <Compile Include="HeatGeodesic\Geometry.cs" />
+    <Compile Include="HeatGeodesic\Settings.cs" />
+    <Compile Include="03 MeshGrowth\MeshGrowthSystem.cs" />
+    <Compile Include="HeatGeodesic\HeatGeodesic.cs" />
+    <Compile Include="02 Reaction Diffusion\ReactionDiffusionOnMeshSystem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="03 MeshGrowth\03 GhcMeshGrowth.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DifferentialLineIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DifferentialCurveIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshGrowthIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DifferentialLineWithBoundary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DifferentialLineAttractIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DifferentialLineOnMeshIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DifferentialLineOnMeshAttractIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DifferentialLineAttractIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertPointsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReactionDiffusionIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReactionWithDirectionIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReactionDiffusionMeshIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaculateMeshTangentsOnVerticesFromCurvesIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReplaceListByValuesIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReplaceCurveTreeAfterDeleteDuplicateCurvesIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grasshopper Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveDivideCurveByLengthIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddBoundaryCurvesToTreeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="06 Porifera\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "$(TargetDir)$(ProjectName).gha"
+Copy "$(TargetPath)" "C:\Users\DELL\AppData\Roaming\Grasshopper\Libraries\CurlyKale\CurlyKale.gha"
+Erase "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <FallbackCulture>en-US</FallbackCulture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartProgram>C:\Program Files\Rhino 6\System\Rhino.exe</StartProgram>
+    <StartArguments>
+    </StartArguments>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+</Project>
